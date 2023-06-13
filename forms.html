@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Registration</title>
+<link rel="icon" type="image/x-icon" href="event.png">
+<style>
+body{
+background-color:rgb(155, 155, 175);
+text-align: justify;
+}
+h1{
+text-align: center;
+color:oldlace;
+background-color: rgb(63, 47, 88);
+}
+label{
+color: rgb(43, 35, 56);
+font-weight:600;
+}
+legend
+{
+color:rgb(99, 97, 97);
+}
+/*footer{
+background-color: rgb(63, 47, 88);
+}*/
+</style>
+<script>
+form
+</script>
+</head>
+<body>
+<h1><br><br>EVENT REGISTRATION PORTAL<br><br><br></h1>
+<FIeldset>
+<H2 style="color: rgb(30, 25, 37);">PLEASE FILL THE DETAILS TO REGISTER</H2>
+<br>
+<form name="form1" action = "destination.html"target="_blank" method = "get">
+<div>
+<fieldset>
+<legend>Personal Information:</legend>
+<label for = "name1" >FIRST NAME:</label><br><br>
+<input type="text" id="name1" name="name1" placeholder="First Name"
+required><br><br>
+<label for="name2">MIDDLE NAME:</label><br><br>
+<input type="text" id="name2" name="name2" placeholder="Middle Name"><br><br>
+<label for="name3">LAST NAME:</label><br><br>
+<input type="text" id="name3" name="name3" placeholder="Last Name" ><br><br>
+<br><div>
+<label for="regn">VIT REGISTRATION NUMBER:</label>&nbsp;&nbsp;&nbsp;
+<input type="text" id ="regn" name="regn" pattern ="{0-2}{0-9}{[A-Za-z][A-Za-z][A-Za-z]{0-9}{0-9}{0-9}"
+placeholder="VIT Reg No." required>
+<br><br>
+<label for="email">VIT E-MAIL ID:</label>&nbsp;&nbsp;&nbsp;
+<input type="email" id ="email" name="email" placeholder="Your VIT E-mail" required>
+<br><br>
+<label for="contactnumber">ENTER CONTACT NUMBER:</label>
+<input type="tel" id="contactnumber" name="contactnumber" pattern = "{0-
+9}{0-9}{0-9}{0-9}-{0-9}{0-9}-{0-9}{0-9}" placeholder="xxxx-xx-xxxx" required><br><br>
+<label for="dob">DATE OF BIRTH:</label>&nbsp;&nbsp;
+<input type="date" id="dob" name="dob" required><br><br>
+<div>
+<label for="g">GENDER:</label>
+<input type="radio" id="male" name="g" value="MALE">
+<label for="male">male</label>&nbsp;&nbsp;&nbsp;
+<input type="radio" id="female" name="g" value="FEMALE">
+<label for="female">female</label>&nbsp;&nbsp;&nbsp;
+<input type="radio" id="other" name="g" value="OTHERS">
+<label for="other">other</label>
+</div>
+</div><br>
+</fieldset>
+</div><br>
+<div>
+<fieldset>
+<legend>Event Details</legend>
+<div><br>
+<label for="Clubs">CLUB OR CHAPTER:</label>&nbsp;&nbsp;&nbsp;
+<select name="Clubs" >
+<option value="cl1">The Catalyst Club</option>
+<option value="cl2">Matrix Club</option>
+<option value="cl3">Zerowaste Management Club</option>
+<option value="cl4">Other</option>
+</select>
+<br>
+<br>
+<label for="event">EVENT TITLE:</label>&nbsp;&nbsp;&nbsp;
+<input type="text">
+</div><br>
+</fieldset>
+</div>
+<div><br>
+<fieldset>
+<legend>Additinal Information</legend>
+<br>
+<label for="prg">PROGRAM:</label>&nbsp;&nbsp;&nbsp;
+<select name="prg">
+<option value="p1">B.Tech</option>
+<option value="p2">M.Tech</option>
+<option value="other">Other</option>
+</select>
+<br><br>
+<label for="addcontactnumber">ADDITIONAL CONTACT NUMBER:</label>
+<input type="tel" id="addcontactnumber" name="addcontactnumber" pattern = "{0-9}{0-
+9}{0-9}{0-9}-{0-9}{0-9}-{0-9}{0-9}" placeholder="xxxx-xx-xxxx" required> 
+<br><br>
+<label>Where did you hear about this virtual event?</label>
+<br>
+ <input type="radio" id="youtube" name="ad" value="youtube">
+ <label for="youtube">Youtube</label><br>
+ <input type="radio" id="fb" name="ad" value="fb">
+ <label for="fb">Facebook</label><br>
+ <input type="radio" id="twt" name="ad" value="twt">
+ <label for="twt">Twitter</label><br>
+ <input type="radio" id="otherss" name="ad" value="otherss">
+ <label for="twt"></label>
+ <input type="text" id="otherss" placeholder="Others">
+<BR><BR><hr><br>
+<label for="url">INSTAGRAM ACCOUNT:</label>&nbsp;&nbsp;&nbsp;
+<input type="text" id="url" name="url" placeholder="Not Compulsory"><br><br>
+</div><br>
+</fieldset>
+<div><br><br>
+<label>CLICK ON YES IF YOUR INFORMATION IS CORRECT AND TRUE</label><br><br>
+<input type="checkbox" id="yes" name="yes" value="YES">
+<label for="yes"> YES</label>
+<input type="checkbox" id="no" name="no" value="NO">
+<label for="no"> NO</label><br>
+</div>
+<br><br>
+<input type="submit" value="Submit">&nbsp;&nbsp;&nbsp;
+<input type="reset">
+</form>
+</FIeldset>
+<br><br>
+<footer>
+<br><br><br><br><br>
+</footer>
+</body>
+</html>
